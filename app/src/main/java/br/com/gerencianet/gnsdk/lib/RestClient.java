@@ -34,6 +34,10 @@ public class RestClient {
         client.post(getAbsoluteUrl(url), params, responseHandler);
     }
 
+    public void post(String baseUrl, String relativeUrl, RequestParams params, JsonHttpResponseHandler responseHandler) {
+        client.post(baseUrl + relativeUrl, params, responseHandler);
+    }
+
     public String getAbsoluteUrl(String relativeUrl) {
         return baseUrl + relativeUrl;
     }
