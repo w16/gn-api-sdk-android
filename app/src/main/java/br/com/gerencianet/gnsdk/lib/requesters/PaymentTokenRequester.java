@@ -62,7 +62,12 @@ public class PaymentTokenRequester extends JsonHttpResponseHandler implements IR
 
                 params = new RequestParams();
                 params.add("data", encryptedCard);
-                client.post(Constants.ROUTE_SAVE_CARD, params, responseHandler);
+
+                if (config.isSandbox()) {
+                    client.post(Constants.ROUTE_SAVE_CARD, params, responseHandler);
+                } else {
+                    client.post(Constants.BASE_URL_TOKENIZER_PRODUCTION, Constants.ROUTE_SAVE_CARD, params, responseHandler);
+                }
             } else {
                 throw new Exception();
             }
