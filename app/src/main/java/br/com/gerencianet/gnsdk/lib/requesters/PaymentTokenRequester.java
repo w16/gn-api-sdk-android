@@ -23,8 +23,11 @@ public class PaymentTokenRequester extends JsonHttpResponseHandler implements IR
     private RequestParams params;
     private RestClient client;
     private CreditCard creditCard;
+    private Config config;
 
-    public PaymentTokenRequester() {}
+    public PaymentTokenRequester(Config config) {
+        this.config = config;
+    }
 
     @Override
     public void doPost() {

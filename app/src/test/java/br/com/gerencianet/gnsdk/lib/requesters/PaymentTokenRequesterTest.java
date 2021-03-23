@@ -56,7 +56,7 @@ public class PaymentTokenRequesterTest {
 
         creditCard = new CreditCard();
 
-        requester = new PaymentTokenRequester();
+        requester = new PaymentTokenRequester(config);
         requester.setCreditCard(creditCard);
         requester.setClient(client);
         requester.setResponseHandler(responseHandler);

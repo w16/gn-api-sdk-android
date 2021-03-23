@@ -27,7 +27,7 @@ public class Endpoints implements IEndpoints {
     public Endpoints(Config config, IGnListener listener) {
         this.listener = listener;
         client = new RestClient(config);
-        paymentTokenRequester = new PaymentTokenRequester();
+        paymentTokenRequester = new PaymentTokenRequester(config);
         installmentsRequester = new InstallmentsRequester();
     }
 
