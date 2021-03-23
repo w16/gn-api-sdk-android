@@ -6,7 +6,7 @@
     <url>https://github.com/gerencianet/gn-api-sdk-android</url>
     <groupId>br.com.gerencianet.mobile</groupId>
     <artifactId>gn-api-sdk-android</artifactId>
-    <version>0.7-SNAPSHOT</version>
+    <version>0.8</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -27,6 +27,22 @@
             </roles>
             <properties>
                 <picUrl>http://www.gravatar.com/avatar/491e54b4b49343ca96272b398aebe8e0.png</picUrl>
+            </properties>
+        </developer>
+
+        <developer>
+            <id>luizcristino</id>
+            <name>Luiz Cristino</name>
+            <email>luiz@w16.com.br</email>
+            <url>https://github.com/luizcristino</url>
+            <organization>W16</organization>
+            <organizationUrl>https://www.w16.com.br</organizationUrl>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <properties>
+                <picUrl>https://avatars.githubusercontent.com/u/33782549</picUrl>
             </properties>
         </developer>
     </developers>
